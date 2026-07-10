@@ -16,6 +16,21 @@
   .card-icon { font-size: 2.5rem; margin-bottom: 16px; }
   .card-title { font-size: 1.1rem; font-weight: 600; color: #e6edf3; margin-bottom: 6px; }
   .card-desc { font-size: 0.85rem; color: #8b949e; }
+  .card-new {
+    border-color: rgba(212,168,67,.55); position: relative;
+    box-shadow: 0 0 24px rgba(212,168,67,.15);
+    animation: cardGlow 2.4s ease-in-out infinite;
+  }
+  @keyframes cardGlow {
+    0%, 100% { box-shadow: 0 0 18px rgba(212,168,67,.12); }
+    50% { box-shadow: 0 0 32px rgba(212,168,67,.32); }
+  }
+  .card-badge {
+    position: absolute; top: -11px; right: 14px;
+    background: linear-gradient(135deg, #d4a843, #a87c1e);
+    color: #1a1200; font-size: 0.65rem; font-weight: 800; letter-spacing: 1px;
+    padding: 3px 12px; border-radius: 999px;
+  }
 </style>
 </head>
 <body>
@@ -23,6 +38,12 @@
   <div class="logo-title">The Classic PW</div>
   <div class="subtitle">Relatórios do servidor</div>
   <div class="cards">
+    <a class="card card-new" href="guerra_28-06_replay.html">
+      <div class="card-badge">NOVO</div>
+      <div class="card-icon">⏪</div>
+      <div class="card-title">Guerra 28/06 — Replay</div>
+      <div class="card-desc">Assista a TW de novo: replay ao vivo, batalhas e cartas dos jogadores</div>
+    </a>
     <a class="card" href="relatorio_7d.html">
       <div class="card-icon">📊</div>
       <div class="card-title">Sugestões</div>
